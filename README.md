@@ -7,7 +7,7 @@ Project with few cucumber scenarios testing Wiki search functionality
 ## 📍 Example --> [See generated result](https://patvariali.github.io/Selenium_Junit5_Cucumber_Example)
 ## Getting Started
 
-* Clone this repository using this link --> https://github.com/patvariali/Selenium_Junit5_Cucumber.git
+* Clone this repository using this link --> https://github.com/patvariali/Selenium_Junit5_Cucumber_Example.git
 * Upload all maven dependecies using this command
 
 ```
