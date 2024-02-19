@@ -24,6 +24,8 @@ public class Hooks {
         if (scenario.isFailed()) {
             allureUtils.captureScreenshot(Driver.getDriver());
             allureUtils.capturePageSourceWithStyles(Driver.getDriver());
+            allureUtils.browserConsoleLogs();
+            allureUtils.addVideo();
         }
         System.out.println("---> @After: RUNNING AFTER EACH SCENARIO");
 

@@ -4,8 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.URL;
 import java.time.Duration;
+import java.util.HashMap;
 
 public class Driver {
 
@@ -32,6 +35,21 @@ public class Driver {
             System.out.println("******************************");
 
             switch (browserType){
+                case "remote-chrome":
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--remote-allow-origins=*", "--window-size=1920,1080");
+                    options.setCapability("selenoid:options", new HashMap<String, Object>() {{
+                        put("sessionTimeout", "10m");
+                        put("enableVideo", true);
+                    }});
+
+                    try {
+                        RemoteWebDriver remoteDriver = new RemoteWebDriver(new URL("http://0.0.0.0:3444/wd/hub"), options);
+                        driverPool.set(remoteDriver);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    break;
 
                 case "chrome":
                     driverPool.set(new ChromeDriver(chromeOptions));
