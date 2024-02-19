@@ -1,0 +1,23 @@
+{
+  "base": {
+    "logo": "",
+    "project": "web-automation",
+    "environment": "qa",
+    "comment": "Automated Allure Result from Jenkins",
+    "reportLink": "",
+    "language": "en",
+    "allureFolder": "target/site/allure-maven-plugin/",
+    "enableChart": true,
+    "durationFormat": "HH:mm:ss.SSS"
+  },
+  "mail":
+  {
+    "host": "smtp.gmail.com",
+    "port": "465",
+    "username": "",
+    "password": "",
+    "securityProtocol": "SSL",
+    "from": "",
+    "recipient": ""
+  }
+}
