@@ -3,8 +3,8 @@ Example of (Cucumber + JUnit5 + Selenium + Maven + Allure Reports) framework
 <br>
 Project with few cucumber scenarios testing Wiki search functionality
 <br>
-❗New: added functionality with screenshot, page source(html+css), browser logs, recorded video of test execution attachment for failed test
-
+❗New: added functionality with screenshot, page source(html+css), browser logs, recorded video of test execution attachmed to failed test
+## 📍 Example --> [See generated result](https://patvariali.github.io/Selenium_Junit5_Cucumber_Example)
 ## Getting Started
 
 * Clone this repository using this link --> https://github.com/patvariali/Selenium_Junit5_Cucumber.git
@@ -32,8 +32,6 @@ mvn clean test
 </p>  
 
 4. Allure reports will automaticly execute and open-up in browser
-
-## 📍 Example --> [See generated result](https://patvariali.github.io/Selenium_Junit5_Cucumber/)
 
 5. You can see attached screenshot, page source in HTML+CSS, browser logs and recorded video of failed test
 <p align="left">
