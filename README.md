@@ -3,37 +3,20 @@ Example of (Cucumber + JUnit5 + Selenium + Maven + Allure Reports) framework
 <br>
 Project with few cucumber scenarios testing Wiki search functionality
 <br>
-❗New: added functionality with screenshot, page source(html+css), browser logs, recorded video of test execution attachmed to failed test
-## 📍 Example --> [See generated result](https://patvariali.github.io/Selenium_Junit5_Cucumber_Example)
-## Getting Started
+❗New: added functionality for failed test case:
+* screenshots
+* page source(html+css)
+* browser error logs
+* recorded test executon
 
-* Clone this repository using this link --> https://github.com/patvariali/Selenium_Junit5_Cucumber_Example.git
-* Upload all maven dependecies using this command
-
-```
-mvn dependency:resolve
-```
-## Running the tests
-
-Run tests using this command
-
-```
-mvn clean test
-```
-
-## Open Allure reports
-
-1. Go to your Plugins option under the maven UI under intellIj
-2. Find "allure" option
-3. Execute "allure:serve
-
+❗New: Automaticly sending result on any messenger(Telegram, Slack, Email, Skype, Mattermost, Discord, Loop, Rocket.Chat):
 <p align="left">
- <img width="400" src="assets/AllureServe.png" alt="allure:serve"/>
+ <img width="800" src="assets/allureReportOnMail.png" alt="allure:serve"/>
 </p>  
 
-4. Allure reports will automaticly execute and open-up in browser
+## 📍 Example --> [See generated result](https://patvariali.github.io/Selenium_Junit5_Cucumber_Example)
 
-5. You can see attached screenshot, page source in HTML+CSS, browser logs and recorded video of failed test
+# You can see attached screenshot, page source in HTML+CSS, browser logs and recorded video of failed test
 <p align="left">
  <img width="1000" src="assets/allureFailedResult.png" alt="allure:failed"/>
 </p>  
@@ -65,9 +48,9 @@ In this project were implemented:
 * Using rerun plugin for storing all failed tests under rerun.txt file
 * Implemented 'Abstraction' providing universal utility methods
 * Parallel testing with Junit5, multiple threads in same class (Creating pool of drivers for support Singleton)
-* Detailed Allure reports with attaching screenshots of failed steps using Hook from Cucumber
-* CI with Github Actions, and publishing them automaticly in gitHub pages in the same repository
+* Detailed Allure reports with attaching screenshots, browser logs, video, page source of failed steps using Hooks from Cucumber
+* Github Actions, and publishing them automaticly in gitHub pages in the same repository
+* Implemented CI/CD pipeline using Jenkins and Selenium Grid 
 * [See generated result](https://patvariali.github.io/Selenium_Junit5_Cucumber/3/)
-* Connected simple CI with gitHub Actions
 
 etc...
