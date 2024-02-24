@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Feb 24 06:24:47 GMT 2024","Sat Feb 24 06:24:51 GMT 2024","3587","","Wiki search features","","Wikipedia Search Functionality with Scenario Outline","","Wikipedia Search Functionality with Scenario Outline",""
+"passed","Sat Feb 24 06:24:47 GMT 2024","Sat Feb 24 06:24:51 GMT 2024","3412","","Wiki search features","","Wikipedia Search Functionality with Scenario Outline","","Wikipedia Search Functionality with Scenario Outline",""
+"passed","Sat Feb 24 06:24:28 GMT 2024","Sat Feb 24 06:24:47 GMT 2024","19417","","Wiki search features","","Wikipedia Search Functionality Image Header Verification","","Wikipedia Search Functionality Image Header Verification",""
+"passed","Sat Feb 24 06:24:28 GMT 2024","Sat Feb 24 06:24:47 GMT 2024","19509","","Wiki search features","","Wikipedia Search Functionality Header Verification","","Wikipedia Search Functionality Header Verification",""
+"failed","Sat Feb 24 06:24:47 GMT 2024","Sat Feb 24 06:24:52 GMT 2024","4203","","Wiki search features","","Wikipedia Search Functionality with Scenario Outline","","Wikipedia Search Functionality with Scenario Outline",""
+"passed","Sat Feb 24 06:24:28 GMT 2024","Sat Feb 24 06:24:47 GMT 2024","19510","","Wiki search features","","Wikipedia Search Functionality Title Verification","","Wikipedia Search Functionality Title Verification",""
+"passed","Sat Feb 24 06:24:28 GMT 2024","Sat Feb 24 06:24:47 GMT 2024","19506","","Wiki search features","","Wikipedia Search Functionality with Scenario Outline","","Wikipedia Search Functionality with Scenario Outline",""
