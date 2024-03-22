@@ -3,6 +3,8 @@ Example of (Cucumber + JUnit5 + Selenium + Maven + Allure Reports) framework
 <br>
 Project with few cucumber scenarios testing Wiki search functionality
 <br>
+❗New: log in using cookies to make UI tests faster
+<br>
 ❗New: added functionality for failed test case:
 * screenshots
 * page source(html+css)
