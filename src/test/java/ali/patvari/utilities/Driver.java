@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
@@ -37,14 +38,17 @@ public class Driver {
             switch (browserType){
                 case "remote-chrome":
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--remote-allow-origins=*", "--window-size=1920,1080");
+                    options.addArguments("--window-size=1920,1080");
+
                     options.setCapability("selenoid:options", new HashMap<String, Object>() {{
                         put("sessionTimeout", "10m");
                         put("enableVideo", true);
+                        put("browserName", "chrome");
+                        put("enableVNC", true);
                     }});
 
                     try {
-                        RemoteWebDriver remoteDriver = new RemoteWebDriver(new URL("http://0.0.0.0:3444/wd/hub"), options);
+                        RemoteWebDriver remoteDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                         driverPool.set(remoteDriver);
                     } catch (Exception e) {
                         e.printStackTrace();

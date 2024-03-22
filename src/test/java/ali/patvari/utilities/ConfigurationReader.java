@@ -11,7 +11,7 @@ public class ConfigurationReader {
     static{
 
         try {
-            FileInputStream file = new FileInputStream("src/configuration.properties");
+            FileInputStream file = new FileInputStream("src/Configuration.properties");
             properties.load(file);
 
             file.close();
@@ -26,4 +26,7 @@ public class ConfigurationReader {
         return properties.getProperty(keyword);
     }
 
+    public static void main(String[] args) {
+        System.out.println(getProperty("browser"));
+    }
 }

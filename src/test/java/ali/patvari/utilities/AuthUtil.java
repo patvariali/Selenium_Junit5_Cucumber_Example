@@ -24,7 +24,7 @@ public class AuthUtil {
                 .multiPart("password", "adminat")
                 .multiPart("next", "/")
                 .multiPart("csrfmiddlewaretoken", csrfToken)
-                .post("https://at-sandbox.workbench.lanit.ru/login/")
+                .post("https://qa.trycloud.net/index.php/login")
                 .then().log().all().extract().cookie("sessionid");
     }
 
